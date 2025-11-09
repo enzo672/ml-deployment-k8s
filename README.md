@@ -8,7 +8,7 @@
 
 ---
 
-## 🧠 Overview  
+##  Overview  
 This project demonstrates how to **deploy a machine learning model as a REST API** using **FastAPI**, **Docker**, and **Kubernetes (K8s)**.  
 It walks through the **entire production workflow** — from model optimization to automated deployment in the cloud via **GitHub Actions** and **Google Kubernetes Engine (GKE)**.  
 
@@ -16,7 +16,7 @@ While the example uses an **image classification model** (ONNX format), the same
 
 ---
 
-## ⚙️ Architecture  
+##  Architecture  
 
 ```mermaid
 graph TD;
@@ -30,18 +30,18 @@ graph TD;
 
 ---
 
-## 🧩 Key Features  
+##  Key Features  
 
-✅ FastAPI REST service for real-time predictions  
-✅ Model optimized to ONNX for CPU efficiency  
-✅ Dockerized container for reproducibility  
-✅ Kubernetes deployment for scalability and resilience  
-✅ Automated CI/CD via GitHub Actions  
-✅ Load-testing with Locust for performance evaluation  
+-> FastAPI REST service for real-time predictions  
+-> Model optimized to ONNX for CPU efficiency  
+-> Dockerized container for reproducibility  
+-> Kubernetes deployment for scalability and resilience  
+-> Automated CI/CD via GitHub Actions  
+-> Load-testing with Locust for performance evaluation  
 
 ---
 
-## 📂 Project Structure  
+##  Project Structure  
 
 ```
 ml-deployment-k8s/
@@ -73,7 +73,7 @@ ml-deployment-k8s/
 
 ---
 
-## 🤪 Running Locally  
+##  Running Locally  
 
 ### 1️⃣ Clone the repository
 ```bash
@@ -106,7 +106,7 @@ docker run -p 8000:8000 ml-deployment-k8s
 
 ---
 
-## ☸️ Deploying on Kubernetes  
+##  Deploying on Kubernetes  
 
 ### 1️⃣ Apply the deployment and service files
 ```bash
@@ -124,7 +124,7 @@ If the service type is `LoadBalancer`, note the **EXTERNAL-IP** and test your en
 
 ---
 
-## 🧠 Example API Request  
+##  Example API Request  
 
 ```bash
 curl -X POST -F image_file=@cat.jpg \
@@ -153,7 +153,7 @@ Each time you push changes to the `main` branch:
 
 ---
 
-## 📊 Load Testing  
+##  Load Testing  
 
 The project includes a **Locust** setup to simulate concurrent requests and measure:
 - Latency  
@@ -165,7 +165,7 @@ The project includes a **Locust** setup to simulate concurrent requests and meas
 
 ---
 
-## 🧮 Tech Stack  
+##  Tech Stack  
 
 | Category | Tools |
 |-----------|-------|
@@ -179,19 +179,3 @@ The project includes a **Locust** setup to simulate concurrent requests and meas
 
 ---
 
-## 🦭 Why this project matters  
-
-This project bridges the gap between **ML research and production**.  
-It shows that you can:
-- Build, containerize, and deploy ML models reliably  
-- Automate deployment pipelines  
-- Scale and monitor workloads on Kubernetes  
-
-It’s a solid foundation for **MLOps**, **AI DevOps**, and **cloud-ready ML engineering**.  
-
----
-
-## 🏆 Acknowledgements  
-- [ML-GDE Program](https://developers.google.com/programs/experts/) for GCP support  
-- [Chansung Park](https://github.com/deep-diver) for the original project structure inspiration  
-- [Hannes Hapke](https://www.linkedin.com/in/hanneshapke) for insights on load-testing  
