@@ -1,6 +1,6 @@
 # Deploying ML models with FastAPI, Docker, and Kubernetes
 
-*By: [Sayak Paul](https://github.com/sayakpaul) and [Chansung Park](https://github.com/deep-diver)*
+*By: Enzo KARA
 
 <div align="center">
 <img src="https://i.ibb.co/XLZTbBG/fastapi-ml-deployment.png" width="60%"/><br>
@@ -17,7 +17,6 @@ using [GitHub Actions](https://github.com/features/actions).
 be used to serve other models as well. We also worked on a TF Serving equivalent
 of this project. Check it out [here](https://github.com/deep-diver/ml-deployment-k8s-tfserving).
 
-**Update July 19 2022**: This project won the [#TFCommunitySpotlight award](https://twitter.com/TensorFlow/status/1545115276152389636).
 
 ## Deploying the model as a service with k8s
 
